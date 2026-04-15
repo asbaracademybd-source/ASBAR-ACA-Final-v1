@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Libre Baskerville", serif;
+  --font-body: "Inter", sans-serif;
+}
+
+:root {
+    --primary: #1d4ed8;
+    --primary-light: #60a5fa;
+    --secondary: #fcfaf2;
+    --gold: #d97706;
+    --ink: #1e293b;
+}
+
+body {
+    background-color: var(--secondary);
+    color: var(--ink);
+    font-family: var(--font-body);
+}
+
+.serif {
+    font-family: var(--font-serif);
+}
+
+.glass {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(29, 78, 216, 0.1);
+}
+
+.gradient-text {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+}
+
+.card-shadow {
+    box-shadow: 0 10px 30px -10px rgba(29, 78, 216, 0.15);
+}
+
+.btn-gold {
+    background-color: var(--gold);
+    color: white;
+}
+
+.border-gold {
+    border-color: var(--gold);
+}
+
+.pill-mask {
+    border-radius: 9999px;
+}

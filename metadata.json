@@ -1,0 +1,7 @@
+{
+  "name": "Asbar Academy",
+  "description": "A high-end learning management system featuring student-teacher matchmaking, course management, and automated certificate generation with a glassmorphism design.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
